@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kagaz — never make a second trip</title>
+  <meta name="description" content="Kagaz tells you exactly which documents to carry for a government task, checks your bag with you before you leave, and reminds you before your papers expire.">
+  <meta name="theme-color" content="#f6f1e7">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='10' y='6' width='44' height='52' rx='6' fill='%231f2a44'/><path d='M20 22h24M20 32h24M20 42h14' stroke='%23f6f1e7' stroke-width='4' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Lexend:wght@400;600&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Kagaz home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">Kagaz</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/" data-nav="home" data-i18n="navTasks">Tasks</a>
+      <a href="#/locker" data-nav="locker" data-i18n="navLocker">My papers</a>
+    </nav>
+    <button class="icon-btn" id="a11yBtn" aria-label="Comfort settings" aria-haspopup="dialog" aria-controls="a11yPanel" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5l8 1.5 8-1.5M12 10v5m0 0l-3.5 6M12 15l3.5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span data-i18n="comfort">Comfort</span>
+    </button>
+  </header>
+
+  <aside class="panel" id="a11yPanel" role="dialog" aria-modal="false" aria-labelledby="a11yTitle" hidden>
+    <div class="panel-head">
+      <h2 id="a11yTitle" data-i18n="comfortTitle">Make Kagaz comfortable</h2>
+      <button class="icon-btn ghost" id="a11yClose" aria-label="Close">✕</button>
+    </div>
+
+    <fieldset class="field">
+      <legend data-i18n="language">Language</legend>
+      <div class="seg" role="radiogroup">
+        <label><input type="radio" name="lang" value="en" checked> English</label>
+        <label><input type="radio" name="lang" value="hi"> हिंदी</label>
+        <label><input type="radio" name="lang" value="mr"> मराठी</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend data-i18n="textSize">Text size</legend>
+      <div class="seg" role="radiogroup">
+        <label><input type="radio" name="size" value="1" checked> <span style="font-size:.9em">A</span></label>
+        <label><input type="radio" name="size" value="1.15"> <span style="font-size:1.1em">A</span></label>
+        <label><input type="radio" name="size" value="1.3"> <span style="font-size:1.3em">A</span></label>
+      </div>
+    </fieldset>
+
+    <div class="toggles">
+      <label class="toggle"><input type="checkbox" id="optContrast"><span data-i18n="highContrast">High contrast</span></label>
+      <label class="toggle"><input type="checkbox" id="optEasy"><span data-i18n="easyFont">Easy-read font</span></label>
+      <label class="toggle"><input type="checkbox" id="optMotion"><span data-i18n="lessMotion">Less motion</span></label>
+    </div>
+    <p class="fine" data-i18n="comfortNote">Your choices stay on this device.</p>
+  </aside>
+
+  <main id="main" tabindex="-1"></main>
+
+  <div class="sr-only" aria-live="polite" id="live"></div>
+
+  <footer class="foot">
+    <p data-i18n="footer">Kagaz is a design prototype. Document lists are a general guide — always confirm on the official portal linked in each task.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
