@@ -120,7 +120,7 @@
       const term = input.value.trim().toLowerCase();
       store.set("q", input.value);
       const hits = TASKS.filter((tk) => !term || [tk.title.en, tk.title.hi, tk.title.mr, tk.office, tk.id].join(" ").toLowerCase().includes(term));
-      $("#resultCount").textContent = `${hits.length} results`;
+      $("#resultCount").textContent = `${hits.length} ${t("results")}`;
       $("#list").innerHTML = hits.length ? hits.map((tk) => {
         const r = readiness(tk, getChecks(tk.id));
         return `<li><a class="task-card" href="#/task/${tk.id}">
