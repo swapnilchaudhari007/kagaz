@@ -1,5 +1,7 @@
 # Kagaz — never make a second trip
 
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=white) ![i18n](https://img.shields.io/badge/i18n-EN%20%C2%B7%20%E0%A4%B9%E0%A4%BF%E0%A4%82%E0%A4%A6%E0%A5%80%20%C2%B7%20%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80-orange) ![hackathon](https://img.shields.io/badge/hackathon-Hyperbloom%20October-purple) [![demo](https://img.shields.io/badge/demo-live-success)](https://swapnilchaudhari007.github.io/kagaz/) [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 **Kagaz** (कागज़, "paper") helps you walk into a government office with every document you need, the first time.
 
 You pick the task — passport, licence renewal, Aadhaar address change, income certificate — and Kagaz shows you exactly what to carry, how many photocopies, and how many photos. Before you leave home, a one-minute **Door Check** goes through your bag with you, one card at a time. And **My papers** keeps an eye on the stuff that expires quietly, like PUC and insurance.
